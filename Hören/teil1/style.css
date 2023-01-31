@@ -16,6 +16,7 @@ body > * {
 }
 audio {
     margin-bottom: 2.0rem;
+    margin: auto;
 }
 .title {
     font-size: 20px;
@@ -42,6 +43,7 @@ audio {
     border-radius: 25px;
     font-size: 20px;
     width: 400px;
+    margin: auto;
 }
 
 .option-1:hover, .option-2:hover, .option-3:hover {
