@@ -43,7 +43,6 @@ audio {
     border-radius: 25px;
     font-size: 20px;
     width: 400px;
-    margin: auto;
 }
 
 .option-1:hover, .option-2:hover, .option-3:hover {
@@ -92,6 +91,7 @@ audio {
     .option-1, .option-2, .option-3 {
         width: 250px;
         font-size: 17px;
+        padding: 1.0rem 1.0rem;
     }
 }
 
@@ -108,5 +108,6 @@ audio {
     .option-1, .option-2, .option-3 {
         width: 180px;
         font-size: 17px;
+        padding: 1.0rem 1.0rem;
     }
 }
