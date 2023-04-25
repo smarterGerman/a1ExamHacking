@@ -106,21 +106,21 @@ audio {
 
 @media (max-width: 30.0rem){
     .right-wrong-quiz {
-        width: 160px;
+        width: 150px;
     }
     .title {
         font-size: 20px;
     }
     audio {
-        width: 160px;
+        width: 150px;
     }
     .option-1, .option-2, .option-3 {
-        width: 160px;
+        width: 150px;
         font-size: 17px;
         padding: 1.0rem 1.0rem;
     }
     .finish-screen {
-        width: 160px;
+        width: 150px;
     }
     .retake:after {
         content: "Retake";
