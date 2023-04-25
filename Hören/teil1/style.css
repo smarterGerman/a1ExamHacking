@@ -15,7 +15,7 @@ body > * {
     border-radius: 25px;
 }
 audio {
-    margin-bottom: 2.0rem;
+    margin-bottom: 2.0rem !important;
     margin: auto;
 }
 .title {
