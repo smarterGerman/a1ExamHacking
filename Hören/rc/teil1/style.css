@@ -1,4 +1,7 @@
 /* Reset the margins and paddings */
+html, body {
+    overflow-x: hidden;
+}
 body > * {
     margin: 0;
     padding: 0;
