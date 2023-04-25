@@ -1,7 +1,7 @@
 /* Reset the margins and paddings */
-html, body {
+/*html, body {
     overflow-x: hidden;
-}
+}*/
 body > * {
     margin: 0;
     padding: 0;
@@ -106,21 +106,21 @@ audio {
 
 @media (max-width: 30.0rem){
     .right-wrong-quiz {
-        width: 150px;
+        width: 180px;
     }
     .title {
         font-size: 20px;
     }
     audio {
-        width: 150px;
+        width: 180px;
     }
     .option-1, .option-2, .option-3 {
-        width: 150px;
+        width: 180px;
         font-size: 17px;
         padding: 1.0rem 1.0rem;
     }
     .finish-screen {
-        width: 150px;
+        width: 180px;
     }
     .retake:after {
         content: "Retake";
