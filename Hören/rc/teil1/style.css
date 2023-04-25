@@ -128,6 +128,6 @@ audio {
 }
 audio::-webkit-media-controls-play-button,
      audio::-webkit-media-controls-panel {
-     background-color: #F4618B;
+     background-color: #FFA4A5;
      color: #000;
 }
