@@ -37,7 +37,7 @@ input {
     border: none;
     border-radius: 15px;
     padding: 0.2rem 0.4rem;
-    width: 50%;
+    /* width: 50%; */
 }
 input.unterschrift {
     font-family: cursive;
