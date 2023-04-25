@@ -126,3 +126,8 @@ audio {
         content: "Retake";
     }
 }
+audio::-webkit-media-controls-play-button,
+     audio::-webkit-media-controls-panel {
+     background-color: #F4618B;
+     color: #000;
+}
