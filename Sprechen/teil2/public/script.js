@@ -252,10 +252,11 @@ recognition.addEventListener('result', e => {
       if (tmpCounter == 0){
         let tmpArr = questions;
         let spoken = paragraphs[paragraphs.length - 2].innerText.toLowerCase().replace(/[.,?!;:]/g,"");
-        console.log("I am in the questions section");
-        if(tmpArr.some(el => spoken.includes(el.toLowerCase().replace(/[.,?!;:]/g,""))))
+        console.log("In the question section");
+        console.log(typeof(spoken));
+        if(tmpArr.some(el => spoken.includes(el.toLowerCase().replace(/[.,?!;:]/g,""))) && spoken.includes(current_trigger.toLowerCase()))
         {
-          console.log("Questions arr: " + tmpArr);
+          // console.log("Questions arr: " + tmpArr);
           paragraphs[paragraphs.length - 2].style.color = "green";
           tmpCounter++;
         } else {
@@ -264,10 +265,10 @@ recognition.addEventListener('result', e => {
       } else {
         let tmpArr = answers;
         let spoken = paragraphs[paragraphs.length - 2].innerText.toLowerCase().replace(/[.,?!;:]/g,"");
-        console.log("I am in the answers section");
+        console.log("In the answer section");
         if(tmpArr.some(el => spoken.includes(el.toLowerCase().replace(/[.,?!;:]/g,""))))
         {
-          console.log("Answers arr: " + tmpArr);
+          // console.log("Answers arr: " + tmpArr);
           paragraphs[paragraphs.length - 2].style.color = "green";
           if (tmpCounter == 1){
             tmpCounter = 0;
