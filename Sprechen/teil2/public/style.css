@@ -94,13 +94,30 @@
     width: max-content;
     height: max-content;
   }
-  .next-button:hover, .tutorial-button:hover, .mic-container:hover{
+  .next-button:hover, .tutorial-button:hover, #audio-img:hover{
     cursor: pointer; 
     transform: scale(1.1);
   }
   .mic-container {
     margin-left: 69px;
     margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  @keyframes blinking-dots {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+  }
+  .dots {
+    animation: blinking-dots 2s infinite;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -10%;
   }
   .mic-container img, .next-button img {
     width: 60px;
@@ -207,6 +224,9 @@
   }
   .blur-konstantin {
     filter: blur(5px);
+  }
+  .hide {
+    display: none;
   }
 /* } */
 

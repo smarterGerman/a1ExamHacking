@@ -31,6 +31,7 @@ const nextButton = document.querySelector(".next-button");
 const triggerTutorialContainer = document.querySelector(".triggers");
 const finishBox = document.querySelector(".finish-screen-konstantin");
 const triggerCounterDiv = document.querySelector(".trigger-counter");
+const blinkingDots = document.querySelector(".dots");
 const counter = 0;
 let play_pause_counter = 0;
 let triggers = createRandomArray(vocabs, 5);
@@ -259,10 +260,12 @@ recognition.addEventListener('result', e => {
           // console.log("Questions arr: " + tmpArr);
           paragraphs[paragraphs.length - 2].style.color = "green";
           tmpCounter++;
+          blinkingDots.classList.remove("hide");
         } else {
           paragraphs[paragraphs.length - 2].style.color = "red";
         }
       } else {
+        blinkingDots.classList.add("hide");
         let tmpArr = answers;
         let spoken = paragraphs[paragraphs.length - 2].innerText.toLowerCase().replace(/[.,?!;:]/g,"");
         console.log("In the answer section");
